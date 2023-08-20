@@ -8,8 +8,7 @@ const FormData: React.FC = () => {
     const { setData } = useContext(GeneratedDataContext);
   const handleSubmit = (values: FormDataType) => {
     api.getGeneratedData("generate-data", values)
-        .then(data => setData(data))
-        .catch(err => console.log(err))
+        .then(data => setData(data)).catch(err => console.log(err))
   };
 
   return <DumbForm handleSubmit={handleSubmit}/>
