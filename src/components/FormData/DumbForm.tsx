@@ -19,7 +19,7 @@ const DumbForm: React.FC<LoginFormData>  = ({handleSubmit, loading}) => (
           </FormGroup>
 
           <FormGroup>
-            <label>Error Rate:</label>
+            <label>Error Rate: Up to 20</label>
             <Field name="errorRate" component="input" type="number" />
           </FormGroup>
 
