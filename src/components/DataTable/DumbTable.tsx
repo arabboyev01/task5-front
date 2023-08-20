@@ -1,8 +1,8 @@
 import React from 'react'
 import { DataTableProps } from '@/types'
-import { Table, Th } from '@/components/DataTable/Table.style'
+import { Table, Td, Th } from '@/components/DataTable/Table.style'
 
-const DumbTable: React.FC = () => (
+const DumbTable: React.FC<DataTableProps> = ({data}) => (
     <Table>
       <thead>
         <tr>
@@ -14,15 +14,15 @@ const DumbTable: React.FC = () => (
         </tr>
       </thead>
       <tbody>
-        {/*{data.map((record, index) => (*/}
-        {/*  <tr key={index}>*/}
-        {/*    <Td>{index + 1}</Td>*/}
-        {/*    <Td>{record.identifier}</Td>*/}
-        {/*    <Td>{record.name}</Td>*/}
-        {/*    <Td>{record.address}</Td>*/}
-        {/*    <Td>{record.phone}</Td>*/}
-        {/*  </tr>*/}
-        {/*))}*/}
+        {data?.map((record, index) => (
+          <tr key={index}>
+            <Td>{index + 1}</Td>
+            <Td>{record.name}</Td>
+              <Td>{record.identifier}</Td>
+            <Td>{record.address}</Td>
+            <Td>{record.phone}</Td>
+          </tr>
+        ))}
       </tbody>
     </Table>
 );

@@ -4,9 +4,8 @@ import { GeneratedDataContext } from '@/context/GeneratedDataContext'
 
 const DataTable: React.FC = () => {
    const { data } = useContext(GeneratedDataContext);
-   console.log(data)
 
-  return <DumbTableComponent />
+  return <DumbTableComponent data={data?.data}/>
 };
 
 export default DataTable;

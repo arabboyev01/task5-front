@@ -17,4 +17,4 @@ export class DataGenerator {
 
 }
 
-export const api = new DataGenerator("http://localhost:3002")
+export const api = new DataGenerator("https://task5-back.onrender.com")
