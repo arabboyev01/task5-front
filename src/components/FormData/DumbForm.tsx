@@ -2,7 +2,8 @@ import React from 'react';
 import { Form, Field } from 'react-final-form';
 import { LoginFormData } from '@/types'
 import { FormContainer, FormGroup, SubmitButton } from '@/components/FormData/Form.style'
-const DumbForm: React.FC<LoginFormData>  = ({handleSubmit}) => (
+import Loader from '@/components/Loader'
+const DumbForm: React.FC<LoginFormData>  = ({handleSubmit, loading}) => (
     <Form onSubmit={handleSubmit}
       render={({ handleSubmit }) => (
         <FormContainer onSubmit={handleSubmit}>
@@ -27,7 +28,7 @@ const DumbForm: React.FC<LoginFormData>  = ({handleSubmit}) => (
             <Field name="seed" component="input" type="text" />
           </FormGroup>
 
-          <SubmitButton type="submit">Generate Random</SubmitButton>
+          <SubmitButton type="submit">{loading ? <Loader /> : "Generate Random"}</SubmitButton>
         </FormContainer>
       )}
     />

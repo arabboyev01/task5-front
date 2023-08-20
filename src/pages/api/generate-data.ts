@@ -6,7 +6,6 @@ export class DataGenerator {
     }
 
     async getGeneratedData(endpoint: string, payload: object): Promise<any> {
-
         const response = await fetch(`${this.baseUrl}/${endpoint}`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},

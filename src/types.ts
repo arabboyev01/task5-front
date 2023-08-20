@@ -6,6 +6,7 @@ export interface ChildrenType {
 }
 export interface LoginFormData {
     handleSubmit: any
+    loading: boolean
 }
 
 export interface UserRecord {

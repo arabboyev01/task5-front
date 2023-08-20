@@ -33,4 +33,9 @@ export const SubmitButton = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
 `;
