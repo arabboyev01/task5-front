@@ -4,8 +4,8 @@ export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-  max-width: 400px;
   margin-left: 2rem;
+  width: 100%;
 `;
 
 export const FormGroup = styled.div`

@@ -27,6 +27,6 @@ export interface FormDataType {
 }
 
 export interface MyContextType {
-    data: any; // Define the type of your context data
+    data: any;
     setData: React.Dispatch<React.SetStateAction<any>>;
 }
