@@ -10,7 +10,7 @@ const DumbForm: React.FC<LoginFormData>  = ({handleSubmit}) => (
             <label>Region:</label>
             <Field name="region" component="select">
               <option value="">Select a region</option>
-                <option value="poland">Uzbekistan</option>
+                <option value="uzbekistan">Uzbekistan</option>
               <option value="poland">Poland</option>
               <option value="usa">USA</option>
               <option value="georgia">Georgia</option>
